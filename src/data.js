@@ -1,4 +1,5 @@
-const list = [
+/* eslint-disable no-unused-expressions */
+[
   {
     id: "c67ab8a7",
     title: "Appartement cosy",
@@ -579,15 +580,3 @@ const list = [
     tags: ["Louvre", "Marais", "Rivoli"],
   },
 ];
-
-function LogementsList() {
-  return (
-    <ul>
-      {list.map((logement, index) => (
-        <li key={logement.id}>{logement.title}</li>
-      ))}
-    </ul>
-  );
-}
-
-export default LogementsList;
