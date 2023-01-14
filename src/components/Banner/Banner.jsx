@@ -2,7 +2,7 @@ import styles from './Banner.module.css'
 import background from './background.png'
 import filter from './filter.png'
 
-function Banner() {
+export default function Banner() {
   return (
     <div className={styles.banner}>
       <img className={styles.image} src={background} alt='Fond bannière' />
@@ -14,5 +14,3 @@ function Banner() {
     </div>
   );
 }
-
-export default Banner;

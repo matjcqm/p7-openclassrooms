@@ -7,7 +7,7 @@ import NavBar from "./components/Navbar/Navbar"
 import Footer from './components/Footer/Footer'
 import './App.css'
 
-function App() {
+export default function App() {
     return(
         <div className="Routes">
             <NavBar />
@@ -21,5 +21,3 @@ function App() {
         </div>
     )
 }
-
-export default App
