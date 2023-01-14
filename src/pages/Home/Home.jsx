@@ -1,9 +1,14 @@
-import styles from './Home.module.css'
+import Banner from '../../components/Banner/Banner';
+import styles from './Home.module.css';
+
 
 function Home() {
     return (
       <div>
-          <h1 className={styles.title}>Page d'accueil</h1>
+          <Banner />
+          <div className={styles.accommodationList}>
+            {/* .map du tableau data pour afficher chaque AccommodationCard */}
+          </div>
       </div>
     );
   }

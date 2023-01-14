@@ -1,3 +1,45 @@
-.navbar {
-    margin: 50px;
+header {
+    height: 68px;
+    max-width: 1240px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    color: #FF6060;
+    font-size: 24px;
+}
+
+.navbar{
+    height: 100%;
+}
+
+.navlist{
+    width: 289px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    line-height: 142.6%;
+}
+
+.navlink{
+    width: auto;
+}
+
+.navlink a {
+    color: #FF6060;
+    text-decoration: none;   
+}
+
+@media screen and (max-width : 560px) {
+    header{
+        text-transform: uppercase;
+        height: 47px;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .navlist{
+        width: 140px;
+    }
 }

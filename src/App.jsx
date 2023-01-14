@@ -4,6 +4,8 @@ import About from "./pages/About/About"
 import Acommodation from "./pages/Accommodation/Accommodation"
 import NotFound from "./pages/NotFound/NotFound"
 import NavBar from "./components/Navbar/Navbar"
+import Footer from './components/Footer/Footer'
+import './App.css'
 
 function App() {
     return(
@@ -15,6 +17,7 @@ function App() {
                 <Route path='/acommodation/:id' element={<Acommodation />} />
                 <Route path='/notfound' element={<NotFound />} />
             </Routes>
+            <Footer />
         </div>
     )
 }
