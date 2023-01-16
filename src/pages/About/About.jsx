@@ -1,9 +1,11 @@
 import styles from './About.module.css'
+import Banner from '../../components/Banner/Banner';
+import background from '../../assets/backgroundAbout.png'
 
 export default function About() {
     return (
       <div>
-          <h1 className={styles.title}>A propos</h1>
+          <Banner img={background} />
       </div>
     );
   }
