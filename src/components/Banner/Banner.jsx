@@ -8,7 +8,7 @@ export default function Banner() {
       <img className={styles.image} src={background} alt='Fond bannière' />
       <img className={styles.filter} src={filter} alt='Filtre' />
       <div className={styles.titles}>
-        <h1 className={styles.title}>Chez vous,</h1>
+        <h1 className={styles.title}>Chez vous,&nbsp;</h1>
         <h1 className={styles.title}>partout et ailleurs</h1>
       </div>
     </div>

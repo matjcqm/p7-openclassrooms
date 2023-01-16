@@ -1,4 +1,52 @@
-.accommodationList {
-    background: #F7F7F7;
-    
+.card {
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.cover{
+    position: absolute;
+    height: 340px;
+    width: 340px;
+    background: #FF6060;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.filter{
+    height: 340px;
+    width: 340px;
+    position: absolute;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 1;
+}
+
+.title{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 2;
+    left: 20px;
+    bottom: 15px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width : 700px) {
+    .card{
+        height: 255px;
+        width: 100%;
+    }
+
+    .cover{
+        height: 255px;
+        width: 100%;
+    }
+
+    .filter{
+        height: 255px;
+        width: 100%;
+    }
 }

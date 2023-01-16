@@ -13,13 +13,12 @@ header {
 }
 
 .navlist{
-    width: 289px;
+    width: 270px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
-    line-height: 142.6%;
 }
 
 .navlink{
@@ -31,7 +30,7 @@ header {
     text-decoration: none;   
 }
 
-@media screen and (max-width : 560px) {
+@media screen and (max-width : 700px) {
     header{
         text-transform: uppercase;
         height: 47px;

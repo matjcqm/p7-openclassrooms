@@ -9,8 +9,8 @@ export default function Home() {
       <div>
           <Banner />
           <div className={styles.accommodationsList}>
-            {data.map((data) =>
-              <AccommodationCard data={data} key={data.id} />
+            {data.map((accommodation) =>
+              <AccommodationCard logement={accommodation} key={accommodation.id} />
             )}
           </div>
       </div>

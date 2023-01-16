@@ -34,18 +34,20 @@
 }
 
 .title{
-    
     font-size: 48px;
     color: #FFFFFF;
     font-weight: 500;
-    line-height: 142.6%;
 }
 
-@media screen and (max-width : 560px) {
+@media screen and (max-width : 700px) {
     .banner{
         height: 111px;
         margin-top: 16px;
     }
+/* 
+    .image{
+        object-position:bottom;
+    } */
 
     .titles{
         height: 100%;

@@ -5,11 +5,12 @@ import Acommodation from "./pages/Accommodation/Accommodation"
 import NotFound from "./pages/NotFound/NotFound"
 import NavBar from "./components/Navbar/Navbar"
 import Footer from './components/Footer/Footer'
-import './App.css'
+import styles from './App.module.css'
 
 export default function App() {
     return(
-        <div className="Routes">
+        <>
+        <div className={styles.container}>
             <NavBar />
             <Routes>
                 <Route path='/' element={<Home />} />
@@ -17,7 +18,8 @@ export default function App() {
                 <Route path='/acommodation/:id' element={<Acommodation />} />
                 <Route path='/notfound' element={<NotFound />} />
             </Routes>
-            <Footer />
         </div>
+        <Footer />
+        </>
     )
 }
