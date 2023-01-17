@@ -2,7 +2,7 @@ import Banner from '../../components/Banner/Banner';
 import AccommodationCard from '../../components/AccommodationCard/AccommodationCard'
 import styles from './Home.module.css';
 import background from '../../assets/backgroundHome.png'
-import data from '../../data'
+import data from '../../data/accommodations.json'
 
 
 export default function Home() {
@@ -11,7 +11,6 @@ export default function Home() {
           <Banner img={background} text1={'Chez vous,'} text2={'partout et ailleurs'}/>
           <div className={styles.accommodationsList}>
             {data.map((accommodation) =>
-            
               <AccommodationCard logement={accommodation} key={accommodation.id} />
             )}
           </div>
