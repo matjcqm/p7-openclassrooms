@@ -6,13 +6,13 @@ import data from '../../data/about.json'
 
 export default function About() {
     return (
-      <div className={styles.container}>
+      <>
           <Banner img={background} />
           <div className={styles.aboutList}>
             {data.map((collapse) =>
               <Collapse info={collapse}/>
             )}
           </div>
-      </div>
+      </>
     );
   }

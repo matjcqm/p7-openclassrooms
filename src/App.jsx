@@ -16,7 +16,6 @@ export default function App() {
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/accommodation/:id' element={<Acommodation />} />
-                <Route path='/accommodation/*' element={<NotFound />} />
                 <Route path='*' element={<NotFound />} />
                 <Route path='/notfound' element={<NotFound />} />
             </Routes>

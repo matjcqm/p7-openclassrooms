@@ -11,7 +11,7 @@ export default function Collapse({info}) {
     }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.collapse}>
         <div onClick ={modifyToggle} className={styles.collapseVisible}>
             <h2 className={styles.title}>{info.title}</h2>
             <img className={toggle ? `${styles.arrowAnimated} ${styles.arrow}` : `${styles.arrow}`} src={arrow} alt='Arrow Down' />

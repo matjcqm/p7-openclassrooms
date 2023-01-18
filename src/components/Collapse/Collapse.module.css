@@ -1,9 +1,6 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 31px 0;
+.collapse{
+    margin-top: 31px;
+    width: 100%;
 }
 
 .collapseVisible{
@@ -11,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1023px;
+    width: auto;
     height: 47px;
     border-radius: 5px;
     color: white;
@@ -28,7 +25,7 @@
 .collapseToggle{
     background: #F7F7F7;
     border-radius: 5px;
-    width: 1023px;
+    width: auto;
     padding: 18px;
     opacity: 0;
     position: absolute;
