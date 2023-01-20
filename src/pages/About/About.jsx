@@ -10,7 +10,7 @@ export default function About() {
           <Banner img={background} />
           <div className={styles.aboutList}>
             {data.map((collapse) =>
-              <Collapse info={collapse}/>
+              <Collapse title={collapse.title} text={collapse.text}/>
             )}
           </div>
       </>

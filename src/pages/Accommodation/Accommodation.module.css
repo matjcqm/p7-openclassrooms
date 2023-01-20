@@ -1,3 +1,30 @@
-.title {
-    color: green;
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #FF6060;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    margin-top: 30px;
+}
+
+.location{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+}
+
+.tags{
+    font-size: 14px;
+    line-height: 142.6%;
+    margin-top: 20px;
+}
+
+.collapse{
+    display: flex;
+    justify-content: space-between;
 }

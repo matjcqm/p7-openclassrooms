@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import styles from './Collapse.module.css'
 import arrow from '../../assets/arrow_back.png'
 
-export default function Collapse({info}) {
+export default function Collapse({title, text}) {
 
     const [toggle, setToggle] = useState(false);
 
@@ -13,11 +13,11 @@ export default function Collapse({info}) {
   return (
     <div className={styles.collapse}>
         <div onClick ={modifyToggle} className={styles.collapseVisible}>
-            <h2 className={styles.title}>{info.title}</h2>
+            <h2 className={styles.title}>{title}</h2>
             <img className={toggle ? `${styles.arrowAnimated} ${styles.arrow}` : `${styles.arrow}`} src={arrow} alt='Arrow Down' />
         </div>
         <div className={toggle ? `${styles.collapseToggle} ${styles.animated}` : `${styles.collapseToggle}`}>
-            <p className={styles.text}>{info.text}</p>
+            <p className={styles.text}>{text}</p>
         </div>
     </div>
   )
