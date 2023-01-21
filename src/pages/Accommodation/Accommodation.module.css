@@ -19,12 +19,37 @@
 }
 
 .tags{
-    font-size: 14px;
-    line-height: 142.6%;
+    display: flex;
     margin-top: 20px;
 }
 
-.collapse{
+
+.host{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hostName{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    text-align: end;
+    margin-right: 10px;
+}
+
+.hostPicture{
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
+}
+
+.collapses{
+    display: flex;
+    align-items: flex-start;
+}
+
+.collapse{
+    
 }
