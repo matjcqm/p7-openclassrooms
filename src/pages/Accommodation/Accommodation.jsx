@@ -10,11 +10,11 @@ export default function Accommodation() {
   const { id } = useParams()
 
   const accommodation = data.find(item => item.id === id)
-
+  
   return (
     <>
       <div className={styles.carroussel}>
-        <Carousel images={accommodation.pictures[0]} />
+        <Carousel images={accommodation.pictures} />
       </div>
       <div className={styles.description}>
         <div className={styles.left}>

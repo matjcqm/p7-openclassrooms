@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styles from './Collapse.module.css'
-import arrow from '../../assets/arrow_back.png'
+import arrow from '../../assets/arrow_collapse.png'
 
 export default function Collapse({title, text}) {
 
