@@ -3,6 +3,7 @@ import data from '../../data/accommodations.json'
 import Tag from '../../components/Tags/Tag'
 import Collapse from '../../components/Collapse/Collapse'
 import Carousel from '../../components/Carousel/Carousel'
+import Rating from '../../components/Rating/Rating'
 import {useParams} from 'react-router-dom';
 
 export default function Accommodation() {
@@ -10,7 +11,7 @@ export default function Accommodation() {
   const { id } = useParams()
 
   const accommodation = data.find(item => item.id === id)
-  
+
   return (
     <>
       <div className={styles.carroussel}>
@@ -29,13 +30,18 @@ export default function Accommodation() {
             <p className={styles.hostName}>{accommodation.host.name}</p>
             <img className={styles.hostPicture} src={accommodation.host.picture} alt={accommodation.host.name} />
           </div>
-          <div className={styles.rating}>{accommodation.rating}</div>
+            <Rating score={accommodation.rating}/>
         </div>
       </div>
       <div className={styles.collapses}>
-        <Collapse title="Description" text={accommodation.description} className={styles.collapse}/>
-        <Collapse title='Équipements' text={accommodation.equipments}/>
+        <div className={styles.collapse}>
+          <Collapse title="Description" text={accommodation.description} className={styles.collapse}/>
+        </div>
+        <div className={styles.collapse}>
+          <Collapse title='Équipements' text={accommodation.equipments}/>
+        </div>
       </div>
     </>
   )
 }
+

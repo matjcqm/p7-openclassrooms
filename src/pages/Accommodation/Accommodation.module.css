@@ -26,12 +26,13 @@
 
 .host{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 30px;
 }
 
 .hostName{
+    width: 80px;
     font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
@@ -48,8 +49,13 @@
 .collapses{
     display: flex;
     align-items: flex-start;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.6%;
 }
 
 .collapse{
-    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.6%;
 }
