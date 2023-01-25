@@ -7,7 +7,7 @@ import data from '../../data/about.json'
 export default function About() {
     return (
       <>
-          <Banner img={background} />
+          <Banner img={background}/>
           <div className={styles.aboutList}>
             {data.map((collapse) =>
               <Collapse title={collapse.title} text={collapse.text}/>

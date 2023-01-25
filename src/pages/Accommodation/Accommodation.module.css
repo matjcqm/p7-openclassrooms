@@ -20,6 +20,8 @@
 
 .tags{
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
     margin-top: 20px;
 }
 
@@ -58,4 +60,50 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 142.6%;
+}
+
+@media screen and (max-width : 700px) {
+    .description{
+        flex-direction: column;
+    }
+    
+    .right{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+    }
+
+    .location{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 142.6%;
+        margin-top: 5px;
+    }
+
+    .host{
+        margin-top: 16px;
+    }
+
+    .tags{
+        margin-top: 10px;
+    }
+
+    .hostName{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 142.6%;
+    }
+
+    .hostPicture{
+        height: 32px;
+        width: 32px;
+        border-radius: 16px;
+    }
 }

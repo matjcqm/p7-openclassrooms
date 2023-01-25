@@ -7,15 +7,15 @@ export default function Rating(score) {
     const stars = []
 
     for (let i = 0; i < score.score; i++) {
-        stars.push(<img src={starFill} alt='Star Fill' />)
+        stars.push(<img className={styles.star} src={starFill} alt='Star Fill' />)
     }
     for (let i = 0; i < 5 - score.score; i++) {
-        stars.push(<img src={starEmpty} alt='Star Empty'/>)
+        stars.push(<img className={styles.star} src={starEmpty} alt='Star Empty'/>)
     }
     
     return (
         <div className={styles.rating}>
-            {stars.map((star) => <div className={styles.star}> {star}</div>)}
+            {stars.map((star) => <div> {star}</div>)}
         </div>
     )
 }
