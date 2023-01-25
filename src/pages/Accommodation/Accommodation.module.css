@@ -49,14 +49,24 @@
 }
 
 .collapses{
+    width: 100%;
     display: flex;
-    align-items: flex-start;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 142.6%;
+    justify-content: space-between;
+    column-gap: 76px;
+    margin-bottom: 40px;
 }
 
 .collapse{
+    width: 582px;
+}
+
+.collapse h2, .collapse p{
+    font-size: 18px;
+}
+
+.collapse li{
+    list-style: none;
+    color: #FF6060;
     font-weight: 400;
     font-size: 18px;
     line-height: 142.6%;

@@ -40,7 +40,7 @@ export default function Accommodation() {
         </div>
         <div className={styles.collapses}>
           <div className={styles.collapse}>
-            <Collapse title="Description" text={accommodation.description} className={styles.collapse}/>
+            <Collapse title="Description" text={accommodation.description}/>
           </div>
           <div className={styles.collapse}>
             <Collapse title='Équipements' text={accommodation.equipments}/>
