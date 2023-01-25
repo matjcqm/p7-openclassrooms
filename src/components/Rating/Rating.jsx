@@ -1,6 +1,7 @@
 import styles from './Rating.module.css'
 import starEmpty from '../../assets/star_empty.png'
 import starFill from '../../assets/star_fill.png'
+import { v4 as uuidv4 } from 'uuid'
 
 
 export default function Rating(score) {
@@ -15,7 +16,7 @@ export default function Rating(score) {
     
     return (
         <div className={styles.rating}>
-            {stars.map((star) => <div> {star}</div>)}
+            {stars.map((star) => <div key={uuidv4()}>{star}</div>)}
         </div>
     )
 }

@@ -13,7 +13,6 @@ export default function Accommodation() {
 
   const accommodation = data.find(item => item.id === id)
 
-  console.log(accommodation);
   if (accommodation === undefined) {
     return (<NotFound />)
   } else {
@@ -27,7 +26,7 @@ export default function Accommodation() {
             <h1 className={styles.title}>{accommodation.title}</h1>
             <p className={styles.location}>{accommodation.location}</p>
             <div className={styles.tags}>
-              {accommodation.tags.map((tag) => <Tag text={tag} />)}
+              {accommodation.tags.map((tag) => <Tag key={tag} text={tag} />)}
             </div>
           </div>
           <div className={styles.right}>
