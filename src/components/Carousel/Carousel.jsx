@@ -20,11 +20,11 @@ export default function Carousel(images) {
       {images.images.length <= 1 ? null : (
         <>
           <div className={styles.arrows}>
-            <div className={styles.leftArrow} onClick={LeftArrow}>
-              <img src={arrow} alt="Arrow Left" />
+            <div className={styles.leftArrowZone} onClick={LeftArrow}>
+              <img className={styles.leftArrow} src={arrow} alt="Arrow Left" />
             </div>
-            <div className={styles.rightArrow} onClick={RightArrow}>
-              <img src={arrow} alt="Arrow Right" />
+            <div className={styles.rightArrowZone} onClick={RightArrow}>
+              <img className={styles.rightArrow} src={arrow} alt="Arrow Right" />
             </div>
           </div>
           <span className={styles.counter}>
