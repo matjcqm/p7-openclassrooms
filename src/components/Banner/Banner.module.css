@@ -1,5 +1,5 @@
 .banner {
-    height: 223;
+    height: 223px;
     max-width: 1240px;
     margin-top: 63px;
     position: relative;
@@ -43,7 +43,6 @@
 
 @media screen and (max-width : 700px) {
     .banner{
-        height: 111px;
         margin-top: 16px;
     }
 
@@ -57,5 +56,9 @@
     .title{
         margin-left: 0px;
         font-size: 24px;
+    }
+
+    .bannerHome{
+        height: 111px;
     }
 }

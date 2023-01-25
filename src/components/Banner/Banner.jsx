@@ -1,9 +1,9 @@
 import styles from './Banner.module.css'
 import filter from './filter.png'
 
-export default function Banner({img, text1, text2}) {
+export default function Banner({img, text1, text2, propClass}) {
   return (
-    <div className={styles.banner}>
+    <div className={`${styles.banner} ${styles[propClass]}`} >
       <img className={styles.image} src={img} alt='Fond bannière' />
       <img className={styles.filter} src={filter} alt='Filtre' />
       <div className={styles.titles}>
