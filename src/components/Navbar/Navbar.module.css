@@ -21,11 +21,14 @@ header {
     list-style-type: none;
 }
 
+
 .navlink{
     width: auto;
 }
 
-
+.navlink:hover{
+    text-decoration-line: underline;
+}
 
 .navlink a {
     color: #FF6060;
