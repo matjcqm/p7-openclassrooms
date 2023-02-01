@@ -1,9 +1,13 @@
 import styles from './Navbar.module.css'
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logoHeader from '../../assets/logo-header.png'
 
 export default function NavBar() {
+    let activeStyle = {
+        textDecoration: "underline",
+      };
+    
     return (
 
         <header className={styles.header}>
@@ -11,10 +15,16 @@ export default function NavBar() {
             <nav className={styles.navbar}>
                 <ul className={styles.navlist}>
                     <li className={styles.navlink}>
-                        <Link to="/">Accueil</Link>
+                        <NavLink 
+                            to="/"
+                            style={({ isActive }) => isActive ? activeStyle : undefined }
+                            >Accueil</NavLink>
                     </li>
                     <li className={styles.navlink}>
-                        <Link to="/about">A Propos</Link>
+                        <NavLink 
+                            to="/about"
+                            style={({ isActive }) => isActive ? activeStyle : undefined }
+                            >A Propos</NavLink>
                     </li>
                 </ul>
             </nav>
